@@ -1,0 +1,16 @@
+.nav_row {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.nav_link_container{
+  height: 1.5rem;
+}
+
+span.nav_link_container:hover{
+  cursor: pointer;
+}

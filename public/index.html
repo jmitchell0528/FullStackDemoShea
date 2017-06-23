@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+ <head>
+   <meta charset="utf-8">
+      <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+   <title>SheaMail</title>
+   <link rel="stylesheet" href="./src/styles/style.css">
+   <link rel="stylesheet" href="./src/styles/nav.css">
+   <link rel="stylesheet" href="./src/styles/login.css">
+   <link rel="stylesheet" href="./src/styles/inbox.css">
+   <link rel="stylesheet" href="./src/styles/compose.css">
+ </head>
+ <body>
+
+   <nav-dir></nav-dir>
+   <ui-view></ui-view>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.css">
+<script src="./src/app.js"></script>
+<script src="./src/views/compose/composeCtrl.js"></script>
+<script src="./src/views/compose/composeService.js"></script>
+<script src="./src/views/inbox/inboxCtrl.js"></script>
+<script src="./src/views/inbox/inboxService.js"></script>
+<script src="./src/views/login/loginCtrl.js"></script>
+<script src="./src/views/login/loginService.js"></script>
+<script src="./src/views/nav/nav.js"></script>
+</body>
+</html>

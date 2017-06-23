@@ -1,0 +1,23 @@
+<div class="my_container">
+  <div class="message_list_container">
+    <ul class="" ng-repeat="email in emails" ng-click="selectEmail(email)">
+      <li class=""> <h5>{{email.full_name}} </h5></li>
+      <li class=""> {{email.email_title}} </li>
+      <hr>
+    </ul>
+  </div>
+  <div class="message_display">
+    <div ng-show="selectedEmail">
+      <button type="button" ng-click="reply(selectedEmail.id)" class="btn" name="button">Reply</button>
+      <button type="button" ng-click="delete(selectedEmail.id)" class="btn red" name="button">Delete</button>
+      <div class="header">
+        <p>From: {{selectedEmail.full_name}}, &lt;{{selectedEmail.email_address}}&gt;</p>
+        <p>Title: {{selectedEmail.email_title}}</p>
+        <p>Date: {{selectedEmail.date}}</p>
+        <hr>
+        <p>Body: {{selectedEmail.email_body}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

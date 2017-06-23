@@ -1,0 +1,5 @@
+<div class="nav_row">
+  <span class="s3 m3 l3 nav_link_container" ui-sref="inbox"> Inbox </span>
+  <span class="s3 m3 l3 nav_link_container" ng-show="!isLoggedin" ui-sref="login"> Login </span>
+  <span class="s3 m3 l3 nav_link_container" ng-show="isLoggedin" ng-click="logout()"> Logout </span>
+</div>

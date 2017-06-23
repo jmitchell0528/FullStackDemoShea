@@ -1,0 +1,32 @@
+.login_container{
+  width: 40vw;
+  height: 60vh;
+  margin: 10vh auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_wrapper{
+  width: 95%;
+  height: 95%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
+.login_text {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.btn-larger{
+  width: 60%;
+  height: 10vh;
+  background-color: #0AA;
+  font-size: 1.5rem;
+}
+a.login_link{
+  color: black;
+}

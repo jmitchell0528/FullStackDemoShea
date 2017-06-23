@@ -1,0 +1,15 @@
+.my_container{
+  display: flex;
+
+}
+.message_list_container{
+  width: 25%;
+  height: 90vh;
+  background-color: #aaa;
+  overflow-y: scroll;
+}
+.message_display{
+  padding: 5vh;
+  width: 75%;
+  height: 90vh;
+}
