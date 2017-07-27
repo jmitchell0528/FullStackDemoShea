@@ -1,14 +1,14 @@
-const   express = require('express')
- 				, cors = require('cors')
- 				, bodyParser = require('body-parser')
- 				, port = 3000
- 				, app = express()
-        , massive = require('massive')
-        , masterRoutes = require('./server/masterRoutes')
-        , session = require('express-session')
-        , passport = require("passport")
-	      , Strategy = require('passport-facebook').Strategy
-        , config = require('./server/config')
+const   express = require('express'),
+ 				cors = require('cors'),
+ 				bodyParser = require('body-parser'),
+ 				port = 3000,
+ 				app = express(),
+        massive = require('massive'),
+        masterRoutes = require('./server/masterRoutes'),
+        session = require('express-session'),
+        passport = require("passport"),
+	      Strategy = require('passport-facebook').Strategy,
+        config = require('./server/config')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -16,7 +16,7 @@ app.use(session(config.session) );
 app.use(passport.initialize());
 app.use(passport.session());
 app.use("/", express.static(__dirname + '/public'));
-massive(config.postgres).then(dbInstance=>{
+massive(config.postgres).then(dbInstance => {
   app.set('db', dbInstance)
   // dbInstance.upload_emails();
 })
@@ -45,5 +45,5 @@ passport.deserializeUser(function(obj, cb) {
 
 
 app.listen(port, function() {
-  console.log('Server listening on port', port)
+  console.log('Listening on port', port)
 })
